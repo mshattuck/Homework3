@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+ <head>
+    <meta charset="UTF-8">
+    <!-- ensure things scale correctly across varying devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Password Generator</title>
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+ />
+    
+
+ </head>
+
+
+ <body>
+  <div class="container pt-5">
+   
+    <div class="wrapper">
+   
+    <header>
+     <h1>Password Generator</h1>
+    </header>
+   
+    <div class="card">
+      <div class="card-header">
+   
+      </div>
+    
+      <div class="card-body">
+    
+        <!-- Displays the Password once generated-->
+        <textarea
+          readonly
+          id="password"
+          placeholder="Your Secure Password"
+          aria-label="Generated Password"
+       ></textarea></div>
+      </div>
+      
+      
+      <div class="card-footer" style="margin-top: 5%;">
+        <div>
+           
+          <p>Select the lenght and type of characters you want in your password. You must select at least one option to generate a password.</p>
+
+          <!-- choose password lenght -->
+
+          <div id="enter-length">
+            <label for="length">Password length</label>
+            <input type="text" id='length'>
+          </div>
+      
+          <!-- option to include lowercase letters -->      
+          <div>
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">
+              <span> lowercase letters</span></label>
+          </div>
+      
+          <!-- option to include uppercase letters -->     
+          <div>
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">
+              <span> uppercase letters</span></label>
+          </div>
+      
+           <!-- option to include special characters -->   
+           <div>
+            <input type="checkbox" id="specialChar">
+            <label  for="specialChar">
+              <span> special characters</span></label>
+          </div>
+
+          <!-- option to include numbers -->     
+          <div>
+            <input type="checkbox" id="numbers">
+            <label for="numbers">
+              <span> numbers</span></label>
+          </div>
+          
+         
+          
+          <button id="generate" class="btn" style="color: red;">Click here to generate your password</button>
+
+    </div>
+
+    </div>
+ 
+   <script src="script.js">
+
+     console.log(length)
+
+
+   </script>
+
+        
+  </div>
+
+  
+
+
+ </body>
+
+</html>
